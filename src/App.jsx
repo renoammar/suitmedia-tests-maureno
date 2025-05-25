@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Banner from "./components/Banner";
-import ListPost from "./components/Listpost";
+import ListPost from "./components/ListPost";
 
 function App() {
   return (
