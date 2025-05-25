@@ -36,7 +36,12 @@ export default function ListPost() {
             "page[size]": itemsPerPage,
             append: ["small_image", "medium_image"],
             sort: sortBy,
+            "filter[publish_status]": "published"
           },
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          }
         });
 
         setPosts(response.data.data || []);
